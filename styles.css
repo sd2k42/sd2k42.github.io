@@ -78,6 +78,6 @@ a {
 
 @media (max-aspect-ratio: 1/1) {
     .title {
-        font-size: 25vw; /* Font size on phone screens */
+        font-size: 25vw;
     }
 }
