@@ -22,7 +22,7 @@ body {
 }
 
 .title {
-    font-size: 20vh;
+    font-size: 10vw;
     font-family: monospace;
 }
 
@@ -74,4 +74,10 @@ a {
     transform-style: preserve-3d;
     transition: transform 0.1s ease-out;
     position: relative;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .title {
+        font-size: 25vw; /* Font size on phone screens */
+    }
 }
