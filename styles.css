@@ -1,83 +1,60 @@
 * {
-    user-select: none;
-    -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 html {
-    cursor: url('cur/default.cur'), default;
+  cursor: url('cur/default.cur'), default;
+  background-color: #000;
 }
 
 a {
-    cursor: url('cur/pointer.cur'), pointer;
+  cursor: url('cur/pointer.cur'), pointer;
 }
 
 body {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    text-align: center;
-    margin-top: 33vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  margin-top: 33vh;
+  overflow: hidden;
 }
 
 .title {
-    font-size: 10vw;
-    font-family: monospace;
+  font-size: 10vw;
+  font-family: monospace;
 }
 
 .links {
-    display: flex;
-    gap: 20px;
-    margin-top: 5px;
-    justify-content: center;
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+  justify-content: center;
 }
 
 a {
-    text-decoration: none;
-}
-
-.bg {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200vh;
-    background: url('common/noise.png') repeat;
-    animation: bg-animation 5s infinite;
-    z-index: -1;
-    image-rendering: pixelated;
-}
-
-@keyframes bg-animation {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    10% { transform: translate(-5%, -5%) scale(1.2); }
-    20% { transform: translate(-10%, 5%) scale(1.3); }
-    30% { transform: translate(5%, -10%) scale(1.2); }
-    40% { transform: translate(-5%, 15%) scale(1.3); }
-    50% { transform: translate(-10%, 5%) scale(1.2); }
-    60% { transform: translate(15%, 0) scale(1.3); }
-    70% { transform: translate(0, 10%) scale(1.2); }
-    80% { transform: translate(-15%, 0) scale(1.3); }
-    90% { transform: translate(10%, 5%) scale(1.2); }
+  text-decoration: none;
 }
 
 .card {
-    perspective: 1000px;
-    width: 1000px;
-    height: 500px;
+  perspective: 1000px;
+  width: 1000px;
+  height: 500px;
 }
 
 .rotating-box {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.1s ease-out;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+  position: relative;
 }
 
 @media (max-aspect-ratio: 1/1) {
-    .title {
-        font-size: 25vw;
-    }
+  .title {
+    font-size: 25vw;
+  }
 }
