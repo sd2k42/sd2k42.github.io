@@ -28,7 +28,6 @@ document.addEventListener('mousemove', (e) => {
 window.addEventListener('beforeunload', function (event) {
   if (clicked == true) {
     event.returnValue = '.';
-    return '.';
   }
 });
 
