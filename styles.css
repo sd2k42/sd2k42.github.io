@@ -53,6 +53,22 @@ a {
   position: relative;
 }
 
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s cubic-bezier(0, 0, 0, 1) forwards;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (max-aspect-ratio: 1/1) {
   .title {
     font-size: 25vw;
