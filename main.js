@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('audio').play();
     document.getElementById('fbi').remove();
     clicked = true;
+    document.documentElement.requestFullscreen();
     document.querySelector('.curtain').style.opacity = 1;
     document.querySelector('.gooner').style.opacity = 1;
     document.title = 'porn addict';
     document.getElementById('html').classList.add('html');
     document.querySelector('.card').remove();
-    document.documentElement.requestFullscreen();
   });
 });
 
