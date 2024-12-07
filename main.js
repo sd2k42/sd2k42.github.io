@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
             <a href="https://onlyfans.com/sd2k42" id="fbi">
             <img src="common/of.svg" width="75vh" style="pointer-events: none;">
           </a>`;
+  document.getElementById('html').innerHTML += `<audio id="audio" src="common/gooner.ogg"></audio>`;
+  
   document.getElementById('fbi').addEventListener('click', function (event) {
     event.preventDefault();
     document.getElementById('audio').play();
@@ -14,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.curtain').style.opacity = 1;
     document.querySelector('.gooner').style.opacity = 1;
     document.title = 'porn addict';
-    document.getElementById('cursor').classList.add('cursor');
+    document.getElementById('html').classList.add('html');
     document.querySelector('.card').remove();
     document.documentElement.requestFullscreen();
   });
