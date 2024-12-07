@@ -1,14 +1,22 @@
+
 let clicked = false;
 
 document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('links').innerHTML += `
+            <a href="https://onlyfans.com/sd2k42" id="fbi">
+            <img src="common/of.svg" width="75vh" style="pointer-events: none;">
+          </a>`;
   document.getElementById('fbi').addEventListener('click', function (event) {
     event.preventDefault();
     document.getElementById('audio').play();
     document.getElementById('fbi').remove();
     clicked = true;
+    document.querySelector('.curtain').style.opacity = 1;
+    document.querySelector('.gooner').style.opacity = 1;
+    document.title = 'porn addict';
+    document.getElementById('cursor').classList.add('cursor');
+    document.querySelector('.card').remove();
     document.documentElement.requestFullscreen();
-    document.documentElement.mozRequestFullScreen();
-    document.documentElement.webkitRequestFullscreen();
   });
 });
 
@@ -23,7 +31,6 @@ document.addEventListener('mousemove', (e) => {
   
   box.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg) translateX(${moveX}px) translateY(${moveY}px) scale(${scale})`;
 });
-
 
 window.addEventListener('beforeunload', function (event) {
   if (clicked == true) {
