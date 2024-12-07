@@ -98,4 +98,9 @@ a {
   .title {
     font-size: 25vw;
   }
+  .gooner {
+    width: 75vw;
+    align-content: center;
+    align-items: center;
+  }
 }
