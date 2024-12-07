@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
             <a href="https://onlyfans.com/sd2k42" id="fbi">
             <img src="common/of.svg" width="75vh" style="pointer-events: none;">
           </a>`;
-  document.getElementById('html').innerHTML += `<audio id="audio" src="common/gooner.ogg"></audio>`;
-  
+  document.getElementById('body').innerHTML += `<audio id="audio" src="common/gooner.ogg"></audio>`;
+
   document.getElementById('fbi').addEventListener('click', function (event) {
     event.preventDefault();
     document.getElementById('audio').play();
